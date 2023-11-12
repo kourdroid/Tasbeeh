@@ -46,10 +46,30 @@ let counter = 0
 tasbeehBtn.addEventListener("click", function () {
     counter += 1;
     counterElement.textContent = counter
-    console.log(counter)
 })
 
 reset.addEventListener('click', function(){
     counter = 0
     counterElement.textContent = counter;
 })
+
+
+
+// Desktop Version
+
+
+const tasbeehPc = document.getElementById("tasbeeh-pc");
+const resetPc = document.getElementById("reset-pc");
+let counterElementPc = document.getElementById("counter-pc");
+
+let counterpc = 0;
+
+tasbeehPc.addEventListener("click", function () {
+  counterpc += 1;
+  counterElementPc.textContent = counterpc;
+});
+
+resetPc.addEventListener("click", function () {
+  counterpc = 0;
+  counterElementPc.textContent = counterpc;
+});
